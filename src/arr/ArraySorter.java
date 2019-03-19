@@ -10,12 +10,12 @@ public class ArraySorter {
         return result;
     }
 
-    public static double[] sortSwap(double[] array) {
+    public static double[] sortSelect(double[] array) {
         double[] result = array.clone();
         for (int i = 0; i < result.length; i++) {
-           int j = minIndex(result, i);
-                swap(result, i, j);
-            }
+            int j = minIndex(result, i);
+            swap(result, i, j);
+        }
         return result;
     }
 

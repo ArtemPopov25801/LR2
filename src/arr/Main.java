@@ -6,13 +6,13 @@ public class Main {
 
         double[] array = ArraySorter.parse(args);
 
-        for (int n = 0; n < array.length; n++) {
-            System.out.print(array[n] + " ");
+        for (double element : array) {
+            System.out.print(element + " ");
         }
 
         System.out.println();
 
-        double[] arrrrr = ArraySorter.sortSwap(array);
+        double[] arrrrr = ArraySorter.sortSelect(array);
 
         for (int i = 0; i < array.length; i++) {
             System.out.print(arrrrr[i] + " ");
